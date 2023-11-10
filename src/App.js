@@ -3,6 +3,7 @@ import './App.css';
 import ExpenseItem from './components/ExpenseItem';
 import ExpenseDetails from './components/ExpenseDetails';
 import ExpenseForm from './components/ExpenseForm';
+import NewExpense from './components/NewExpense/NewExpense';
 
 function App() {
   const LocationOfExpenditure = "pune"
@@ -19,6 +20,7 @@ function App() {
         {/* <div>{expenseItems}</div> */}
         {/* <ExpenseDetails amount={amount} title={title} location={location}/> */}
         <ExpenseForm/>
+        <NewExpense/>
     </div>
   );
 }
