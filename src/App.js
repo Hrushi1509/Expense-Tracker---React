@@ -14,13 +14,19 @@ function App() {
   const amount  = 100;
   const title = "React";
   const location  = "Mumbai";
+
+  const addExpenseHandler = expense =>{
+    console.log('in app.js')
+    console.log(expenses)
+  }
+
   return (
     <div className="App">
         <ExpenseItem LocationOfExpenditure={LocationOfExpenditure}/>
         {/* <div>{expenseItems}</div> */}
         {/* <ExpenseDetails amount={amount} title={title} location={location}/> */}
         <ExpenseForm/>
-        <NewExpense/>
+        <NewExpense onAddExpense={addExpenseHandler}/>
     </div>
   );
 }
